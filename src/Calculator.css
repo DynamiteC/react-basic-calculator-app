@@ -1,0 +1,86 @@
+/* Calculator Container */
+body {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.calculator {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Display */
+.display {
+    font-size: 32px;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 10px;
+    color: #282c34;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button Styles */
+button {
+    font-size: 24px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e5e5e5;
+}
+
+button:active {
+    background-color: #dcdcdc;
+}
+
+/* Special styles for the operator buttons */
+button.operator {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+button.operator:hover {
+    background-color: #ffa000;
+}
+
+button.operator:active {
+    background-color: #ff8f00;
+}
+
+/* Special styles for the equal button */
+button.equal {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+button.equal:hover {
+    background-color: #45a049;
+}
+
+button.equal:active {
+    background-color: #398439;
+}
