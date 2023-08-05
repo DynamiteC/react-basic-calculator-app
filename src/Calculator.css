@@ -5,13 +5,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font-size: calc(10px + 2vmin);
     color: white;
 }
 
 .calculator {
-    max-width: 400px;
+    min-width: 800px;
     margin: 0 auto;
     border: 2px solid #ccc;
     border-radius: 5px;
@@ -21,6 +21,7 @@ body {
 
 /* Display */
 .display {
+    width: 80%;
     font-size: 32px;
     background-color: #f3f3f3;
     border: 1px solid #ccc;
@@ -30,6 +31,7 @@ body {
     margin-bottom: 10px;
     color: #282c34;
 }
+
 
 /* Buttons Grid */
 .buttons {
